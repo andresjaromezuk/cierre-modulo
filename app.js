@@ -23,8 +23,6 @@ let concesionaria = {
         let autos = this.autos
         let autoDisponible = this.buscarAuto(patente)
         autoDisponible.vendido = true 
-        //let newAuto = autoDisponible.vendido
-        //return {...autos, vendido: newAuto}
         return autoDisponible
     },
 
@@ -88,26 +86,3 @@ let concesionaria = {
     }
    
 module.exports = concesionaria
-
-
-
-/*let filtro = concesionaria.buscarAuto()
-
-let vender = concesionaria.venderAuto()
-
-let disponibles = concesionaria.autosParaLaVenta()
-
-let nuevos = concesionaria.autosNuevos()
-
-let listaDeVentas= concesionaria.listaDeVentas()*/
-
-//let ventas = concesionaria.totalDeVentas()
-
-
-
-//let compra = concesionaria.puedeComprar(auto, persona)
-
-//let puedeComprar = concesionaria.autosQuePuedeComprar(persona)
-
-
-
