@@ -44,7 +44,7 @@ let concesionaria = {
     listaDeVentas: function (){
         let listaVentas = []
         let autos = this.autos
-        let precios = autos.forEach(function (auto) {
+        autos.forEach(function (auto) {
             if (auto.vendido === true) {
                 listaVentas.push (auto.precio)
             }
@@ -73,7 +73,7 @@ let concesionaria = {
             }
         },
 
-        autosQuePuedeComprar: function (persona){
+     autosQuePuedeComprar: function (persona){
             let disponibles = this.autosParaLaVenta()
             return disponibles.filter (function (auto){ 
                        return persona.capacidadDePagoTotal >= auto.precio && persona.capacidadDePagoEnCuotas >= (auto.precio / auto.cuotas )
